@@ -430,6 +430,9 @@
             justify-content: center;
             align-items: center;
             background: radial-gradient(circle, #1a1a1a, #000);
+
+            overflow-y: auto;
+            padding: 40px 20px;
         }
 
         .message-card {
@@ -442,6 +445,10 @@
             backdrop-filter: blur(10px);
             position: relative;
             overflow: hidden;
+            max-height: 80vh;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: var(--accent) transparent;
         }
 
         /* --- MEMORY GALLERY FIXES --- */
@@ -628,10 +635,12 @@
                 <div class="message-card" id="message-card">
     <h2 class="message-title">
         My Dearest Khushi,
+        <br>
     </h2>
 
     <div class="message-content">
         <p>
+            <br>
             Happy 19th Birthday Dear Love..❤️❤️❤️
             Enjoyy the Day with your lovedOnce....
             Hmesha khush raho,hmesa healthy rho.. Love you so much baby..🥰🥰
@@ -657,9 +666,11 @@
             I LOVE YOU and I am always there for you ❤️
 
             Best Wishes on the best day to my beautiful sweetheart 💞💕❤️
-
-            Once Again Happy Birthday ❤️
+            <br>
+            Once Again Happy Birthday dear love ❤️
+            <br>
         </p>
+        <br>
     </div>
 
     <button class="btn-neon message-btn"
@@ -910,7 +921,7 @@
                 b.appendChild(shine);
                 targetContainer.appendChild(b);
                 setTimeout(() => b.remove(), 8000);
-            }, 200);
+            }, 300);
             setTimeout(() => clearInterval(interval), 5000);
         }
 
